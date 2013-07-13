@@ -50,7 +50,10 @@ class base {
   }
 
   file { "/etc/couchdb/local.ini":
-    ensure  => file,
+    ensure  => "present",
+    owner => "couchdb",
+    group => "couchdb",
+    mode => "600",
     content => template('/opt/project/manifests/local.ini.erb'),
     require => Package["deps"],
     notify  => Service["couchdb"]
