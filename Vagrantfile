@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
 
     config.ssh.forward_agent = true
 
-    config.vm.network :forwarded_port, guest: 5984, host: 5984
+    config.vm.network :forwarded_port, guest: 5984, host: 5985
     config.vm.network :forwarded_port, guest: 6007, host: 6007
     config.vm.network :forwarded_port, guest: 6008, host: 6008
     config.vm.network :forwarded_port, guest: 6009, host: 6009
@@ -17,5 +17,9 @@ Vagrant.configure("2") do |config|
     config.vm.provision :puppet do |puppet|
         puppet.manifests_path = "manifests"
         puppet.manifest_file  = "project.pp"
+        puppet.options = [
+            '--verbose',
+            '--debug',
+        ]
     end
 end
