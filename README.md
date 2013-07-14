@@ -19,21 +19,22 @@ Setup
 Now your vm with a fresh couchdb, nodejs and hoodie-cli will be setup.
 
 You can either:
-* vagrant ssh
-* hoodie new myappname
-* cd myappname
-* hoodie start no-open-browser
+* ``vagrant ssh``
+* ``hoodie new myappname``
+* ``cd myappname``
+* ``hoodie start no-open-browser``
 
 Or start from your own machine:
-* hoodie new myappname
-* cd myappname
-* hoodie start
+* [setup hoodie](http://hood.ie/#installation) (skip couchdb setup ;-))
+* ``hoodie new myappname``
+* ``cd myappname``
+* ``hoodie start``
 
 Note
 ====
 
 To use the vm as a couchdb sandbox you need to tell hoodie some more things:
 
-export COUCH_URL=http://localhost:5985
-export HOODIE_ADMIN_USER=admin
-export HOODIE_ADMIN_PASS=mysecretpassword
+``export COUCH_URL=http://localhost:5985``
+``export HOODIE_ADMIN_USER=admin``
+``export HOODIE_ADMIN_PASS=mysecretpassword``
