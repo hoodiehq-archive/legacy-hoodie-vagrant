@@ -42,4 +42,4 @@ To make sure hoodie talks to the right databse export your config:
 ``export HOODIE_ADMIN_PASS=mysecretpassword``
 
 enable access from other ips
-``HOODIE_BIND_ADDRESS=0.0.0.0``
+``export HOODIE_BIND_ADDRESS=0.0.0.0``
