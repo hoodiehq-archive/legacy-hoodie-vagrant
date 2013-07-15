@@ -9,9 +9,9 @@ Vagrant.configure("2") do |config|
     config.ssh.forward_agent = true
 
     config.vm.network :forwarded_port, guest: 5984, host: 5985
-    config.vm.network :forwarded_port, guest: 6007, host: 6007
-    config.vm.network :forwarded_port, guest: 6008, host: 6008
-    config.vm.network :forwarded_port, guest: 6009, host: 6009
+    config.vm.network :forwarded_port, guest: 6001, host: 6001
+    config.vm.network :forwarded_port, guest: 6002, host: 6002
+    config.vm.network :forwarded_port, guest: 6003, host: 6003
 
     config.vm.synced_folder ".", "/opt/project"
     config.vm.provision :puppet do |puppet|
