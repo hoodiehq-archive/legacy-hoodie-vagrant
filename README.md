@@ -22,19 +22,24 @@ You can either:
 * ``vagrant ssh``
 * ``hoodie new myappname``
 * ``cd myappname``
+* set variables (view next part: Exports) 
 * ``hoodie start no-open-browser``
 
 Or start from your own machine:
 * [setup hoodie](http://hood.ie/#installation) (skip couchdb setup ;-))
 * ``hoodie new myappname``
 * ``cd myappname``
-* ``hoodie start``
+* set variables (view next part: Exports)
+* ``./node_modules/hoodie-app/bin/start --no-open-browser``
 
-Note
-====
+Exports
+=======
 
-To use the vm as a couchdb sandbox you need to tell hoodie some more things:
+To make sure hoodie talks to the right databse export your config:
 
 ``export COUCH_URL=http://localhost:5985``
 ``export HOODIE_ADMIN_USER=admin``
 ``export HOODIE_ADMIN_PASS=mysecretpassword``
+
+enable access from other ips
+``HOODIE_BIND_ADDRESS=0.0.0.0``
