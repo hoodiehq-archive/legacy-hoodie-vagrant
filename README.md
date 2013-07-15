@@ -1,8 +1,8 @@
 
-hoodiejs vagrant setup v0.0.1
+hoodie-vagrant setup v0.0.1
 =============================
 
-Goal of this project is to enable hoodiejs based development in a vagrant vm.
+Goal of this project is to enable hoodie based development in a vagrant vm.
 
 Prerequirements
 ===============
@@ -12,9 +12,9 @@ Prerequirements
 Setup the VM
 ============
 
-* checkout this repository [hoogie-vagrant](https://github.com/cainvommars/hoodie-vagrant)
-* cd hoodie-vagrant
-* vagrant up
+* checkout this repository [hoodie-vagrant](https://github.com/cainvommars/hoodie-vagrant)
+* ``cd hoodie-vagrant``
+* ``vagrant up``
 
 Now your VM with a fresh couchdb, nodejs and hoodie-cli will be setup.
 
@@ -26,7 +26,7 @@ You can either:
 * ``hoodie start no-open-browser``
 
 Or start from your own machine:
-* [setup hoodie](http://hood.ie/#installation) (skip couchdb setup ;-))
+* [setup hoodie](http://hood.ie/#installation) (skip couchdb setup, thats included in the VM ;-))
 * ``hoodie new myappname``
 * ``cd myappname``
 * set variables (view next part: Exports)
