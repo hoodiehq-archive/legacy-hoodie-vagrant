@@ -1,6 +1,6 @@
 
-hoodiejs vagrant setup
-======================
+hoodiejs vagrant setup v0.0.1
+=============================
 
 Goal of this project is to enable hoodiejs based development in a vagrant vm.
 
@@ -9,14 +9,14 @@ Prerequirements
 
 * [vagrant](http://www.vagrantup.com/)
 
-Setup
-=====
+Setup the VM
+============
 
 * checkout this repository [hoogie-vagrant](https://github.com/cainvommars/hoodie-vagrant)
-* cd hoodie vagrant
+* cd hoodie-vagrant
 * vagrant up
 
-Now your vm with a fresh couchdb, nodejs and hoodie-cli will be setup.
+Now your VM with a fresh couchdb, nodejs and hoodie-cli will be setup.
 
 You can either:
 * ``vagrant ssh``
