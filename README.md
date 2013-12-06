@@ -1,6 +1,5 @@
-
-hoodie-vagrant setup v0.0.1
-=============================
+hoodie-vagrant setup v1.0.0
+===========================
 
 Goal of this project is to enable hoodie based development in a vagrant vm.
 
